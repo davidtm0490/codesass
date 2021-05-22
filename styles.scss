@@ -1,3 +1,5 @@
+
+//correccion margenes navegador
 html{
     height: 100%;
 }
@@ -9,7 +11,7 @@ body{
 
 
 
-
+//seccion home mobile first (moviles hasta 
 @media (min-aspect-ratio: 16/9)
 {
     #fondohome
@@ -153,7 +155,8 @@ li
     } 
 }
 
-footer{
+footer
+{
     position: fixed;
     bottom: 0%;
     width: 100%;
@@ -162,4 +165,120 @@ footer{
     color: white;
     background-image: linear-gradient(to right,black,gray);
     font-size: 2.5vh;
+}
+
+//seccion servicios mobile first
+ 
+.servicios
+{
+    text-align: left;
+    font-size: 350% ;
+    margin:0 0 5vh 3vw;
+    line-height: 9vh;
+}
+
+.contFlex
+{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    justify-items: center; 
+}
+
+.contImgDiseno
+{
+    background-image: url(./IMAGENES/disenografico.jpeg);  
+    background-size: cover;
+    width: 95vw;
+    height: 25vh;
+    margin-left: 2.5vw;
+}
+
+#disenoGrafico
+{     
+    h2
+    {
+        text-align: left;
+        font-size: 200%;
+        padding-left: 2.5vw;
+    }
+    ul
+    {
+        padding-left: 2.5vw;
+        font-size: 1rem;
+        text-align: left;
+        
+    }  
+}
+
+.contImgConsult
+{
+    background-image: url(./IMAGENES/consultoria.jpeg);  
+    background-size: cover;
+    width: 95vw;
+    height: 25vh;
+    margin-left: 2.5vw;
+}
+
+
+#consultoria
+{   
+    padding-top: 1rem;
+    margin-left: 0vw;
+    p
+    {
+        width: 95vw;
+        text-align: justify;
+        font-size: 1rem;
+        padding-left: 2vw;
+        padding-right: 1vw;
+    }  
+    h2
+    {
+        text-align: left;
+        font-size: 200%;
+        padding-left: 2.5vw;
+    }    
+}
+
+
+.contImgWeb
+{
+    background-image: url(./IMAGENES/progWeb.jpeg); 
+    background-size: cover;
+    width: 95vw;
+    height: 25vh;
+    margin-left: 2.5vw;
+}
+
+#desarrolloWeb
+{   padding-top: 1rem;
+    p
+    {
+        width: 95vw;
+        text-align: justify;
+        font-size: 1rem;
+        padding-left: 2vw;
+        padding-right: 1vw;
+    }    
+    h2
+    {
+        text-align: left;
+        font-size: 200%;
+        padding-left: 2.5vw;
+    }    
+}
+
+.navServ
+{
+    display: none;
+    position: absolute;
+    margin-top:0;
+}
+
+.dropdown
+{
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5rem;
 }
