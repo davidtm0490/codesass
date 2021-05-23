@@ -377,7 +377,17 @@ footer
 //seccion portfolio mobile first
 .d-block
 {
-margin-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+#tituloP
+{
+    text-align: center;
+}
+
+#subtituloPort
+{
+    text-align: center;
 }
 
 .carousel-indicators
@@ -404,4 +414,61 @@ margin-bottom: 2rem;
     background-image: url(./IMAGENES/ImgDavid2.jpg);
     background-size: cover;
     height:78vh;
+}
+
+//Estilos seccion Contacto mobile first
+.contacTitle
+{
+    text-align: left;
+    margin-left:5vw;
+    font-size: 3rem;
+}
+
+.contST
+{
+    margin:1vh 0 4vh 5vw;
+}
+
+form
+{
+    margin-left: 5vw;
+}
+
+input
+{
+    min-width: 90vw;
+    padding-top: 1vh;
+    margin-top:0.5vh;
+}
+
+
+.consulta
+{
+    margin-top: 2vh;  
+    width: 45.7vw;
+}
+
+#mensaje
+{
+    min-width: 90vw;
+   
+}
+
+#botones
+{
+    padding-bottom: 3rem;
+    input
+    {
+        margin-bottom: 1vh;
+    }
+}
+
+.reset
+{
+    background-color: orange;
+}
+
+.submit
+{
+    background-color: green;
 }
