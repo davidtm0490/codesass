@@ -1,60 +1,49 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <title>Nosotros</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- enlace animaciones wow-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bodyServ">
-    <header>
-        <h1 class="servicios">
-            Nuestros Servicios
-        </h1>
+<body class="gridNosotros"><!-- clase para generar la grilla-->
+   
+    <header id="titNosotros" > 
+        <h1>Nosotros</h1>
     </header>
     <main>
-        <!-- contenedor flex para encerrar los 3 servicios-->
-        <div class="contFlex"> 
-            <div id="disenoGrafico" >
-                <h2>Diseño gráfico</h2>
-                <div class="contImgDiseno animate__animated animate__rollIn"></div>
-                <ul>
-                    <li>Digitalizaciones y fotomontajes</li>
-                    <li>Diseño de Logotipos</li>
-                    <li>Diseño publicitario</li>
-                    <li>Creación de videos publicitarios</li>
-                    <li>Lettering (creación de fuentes)</li>
-                </ul>
-            </div>
     
-            <div id="consultoria" >
-                <h2>Consultoría UX/UI</h2>
-                <div class="contImgConsult animate__animated animate__rollIn"></div>
-                <p>Basandonos en los más completos sofwares y últimos desarrollos,te asesoramos en 
-                la mejor organización e innovación de la interfaz de tu proyecto, tambien en mejorar tu código para que puedas brindar
-                una experiencia fluida e inolvidable a tus usuarios.</p>
-            </div>
-            <div id="desarrolloWeb">
-                <h2> Desarrollo web</h2>
-                <div class="contImgWeb animate__animated animate__rollIn"></div> 
-                <p>Desarrollamos para tu empresa el sitio web a medida, amoldando el mismo a tus requerimientos y con un Diseño
-                único e intuitivo al usuario.</p>
-            </div>
-        </div>
+        <div id="imgMariluna"> </div>
+        <section class="mariluna">
+            <h2>Mariluna Gonzales</h2>
+            <p>Apasionada por los detalles, con talento innato hacia las artes visuales y plásticas, ilustradora y artista.
+            Especializacion en diseño publicitario y diseño de interfases y experiencias de usuario (diseño UX/UI)
+            </p>  
+        </section>    
+        <div id="imgMariluna2"> </div> 
+
+        <div class="divisor"></div>
+       
+        
+        <div id="imgDavid"> </div>
+        <section class="david">
+            <h2>David Torres</h2>
+            <p>Desarrollador web, con especialización en lenguajes de programación a la vanguardia del desarrollo de aplicaciones multiplataformas, 
+            formado en ingenieria mecánica orientada a diagnostico de maquinaria asistido por computadora 
+            </p>
+        </section>    
+        <div id="imgDavid2"> </div>    
+    
     </main>
-
- 
-
-    <nav class="navServ animate__animated animate__backInUp animate__slow">
+    <!-- navegador para pantallas tablet en adelante-->
+    <nav class="navNosotros animate__animated animate__backInUp animate__slow">
         <ul class="lista1">
             <li class="fondoNav"><a href="../index.html" >Home</a> </li>         
-            <li class="fondoNav"><a href="./Nosotros.html" >Nosotros</a></li>
+            <li class="fondoNav"><a href="./Servicios.html" >Servicios</a></li>
             <li class="fondoNav"><a href="#" >Portfolios</a>
                 <ul class="sublista">
                     <li> <a href="./landingpages.html"> landing-pages</a></li>
@@ -75,15 +64,15 @@
       
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
           <a class="dropdown-item" href="index.html">HOME</a>
-          <a class="dropdown-item" href="Nosotros.html">Nosotros</a>
+          <a class="dropdown-item" href="Servicios.html">Servicios</a>
           <a class="dropdown-item" href="Portfolios.html">Portfolio</a>
           <a class="dropdown-item" href="Contacto.html">Contacto</a>
         </div>
       </div>
-
-    <footer>
+    
+    <footer class="footerNosotros">
         <p>All rights reserved</p>
-    </footer>    
+    </footer>
 
 
 
@@ -91,5 +80,4 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 </body>
-
 </html>

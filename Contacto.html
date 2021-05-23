@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- enlace animaciones wow-->
+    <link rel="stylesheet" href="../CSS/Estilo.css">
+</head>
+<body >
+    <header>
+        <h1 class="contacTitle">Contacto</h1>  
+    </header>
+    <div class="fondoContacto">
+    <main >
+    <h2 class="contactSubTitle">Construyendo conexiones profesionales</h2>
+    <form action="#">
+        <div>
+            <label for="Nombre" >Nombre</label>
+            <input type="text" placeholder="Escribe tu nombre" >
+        </div>
+        <div>
+            <label for="Apellido">Apellido</label>
+            <input type="text" placeholder="Escribe tu apellido"> 
+        </div>
+        <div> 
+            <label for="Correo electrónico">Correo electrónico</label>
+            <input type="email" placeholder="direccion de E-MAIL" > 
+        </div>
+            <label for="Telefono">Telefono</label>
+            <input type="tel" placeholder="numero de telefono"> <!-- me gustaria limitar a que solo se puedan ingresar números-->
+        
+            <label for="Contacto por teléfono">Contacto por teléfono</label>
+            <input type="checkbox">
+            <label for="Contacto por correo">Contacto por correo</label>
+            <input type="checkbox">
+        <br>
+        <label for="motivo"> Motivo de tu consulta</label>
+        <select name="tipo de consulta"> 
+            <option value="Diseño gráfico-UX/UI">Diseño gráfico-UX/UI</option>
+            <option value="paginas web" selected>Desarrollo Web</option>
+            <option value="App movil">App movil</option>
+            <option value="Software">Desarrollo de software</option>
+        </select>
+        <br> <br>
+        
+         <textarea name="" id="" cols="30" rows="10" placeholder="Escribe aqui tu mensaje" maxlength="500"></textarea>
+
+
+        <div>
+            <input type="reset" value="limpiar formulario">
+            <input type="submit" value="enviar formulario">
+        </div>
+   
+    </form>
+</main>
+<nav class="animate__animated animate__backInUp animate__slow" >
+    <ul class="lista1">
+        <li class="fondoNav"><a href="../index.html" >Home</a> </li>         
+        <li class="fondoNav"><a href="./Servicios.html" >Servicios</a></li>
+        <li class="fondoNav"><a href="./Nosotros.html" >Nosotros</a></li> 
+        <li class="fondoNav"><a href="#" >Portfolios</a>
+            <ul class="sublista">
+                <li> <a href="./landingpages.html"> landing-pages</a></li>
+                    <li> <a href="./ecommerce.html"> E-commerce</a></li>
+                    <li> <a href="./webpages.html"> Web-Pages</a></li>
+            </ul>
+        </li>  
+    </ul>
+
+</nav>
+
+    <footer>
+        <p>All rights reserved</p>
+    </footer>
+    
+    </div>
+</body>
+</html>
