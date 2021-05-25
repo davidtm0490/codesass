@@ -417,21 +417,45 @@ footer
 }
 
 //Estilos seccion Contacto mobile first
+#bodyContacto
+{
+    background-color: rgb(1, 1, 27);
+    color: white;
+    font-weight: bold;
+    background-image: url(./IMAGENES/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .contacTitle
 {
     text-align: left;
-    margin-left:5vw;
+    margin:2vh 0 0 5vw;
     font-size: 3rem;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.486);
+    border-radius: 0.5rem;
 }
 
 .contST
 {
     margin:1vh 0 4vh 5vw;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.486);
+    border-radius: 0.5rem;
 }
+
 
 form
 {
     margin-left: 5vw;
+    label
+    {
+        width: fit-content;
+        background-color: rgba(0, 0, 0, 0.486);
+        border-radius: 0.2rem;
+        padding: 0 1rem 0 0.2rem;
+    }
 }
 
 input
@@ -439,13 +463,38 @@ input
     min-width: 90vw;
     padding-top: 1vh;
     margin-top:0.5vh;
+    font-weight: bold;
 }
 
+.checkbox
+{
+    min-width: 5vw;
+    margin-top: 2vh;
+    //esto es para agrandar el checkbox
+    -ms-transform: scale(1.5); // internet explorer 
+    -moz-transform: scale(1.5); // mozzila 
+    -webkit-transform: scale(1.5); // Safari y Chrome 
+    -o-transform: scale(1.5); // Opera 
+    padding: 10px;
+}       
+
+.checkboxTwo
+{
+    min-width: 5vw;
+    margin:2vh 0 5vh 0;
+    //esto es para agrandar el checkbox
+    -ms-transform: scale(1.5); // internet explorer 
+    -moz-transform: scale(1.5); // mozzila 
+    -webkit-transform: scale(1.5); // Safari y Chrome 
+    -o-transform: scale(1.5); // Opera 
+    padding: 10px;
+}
 
 .consulta
 {
-    margin-top: 2vh;  
-    width: 45.7vw;
+    margin-top: 0vh;  
+    width: fit-content;
+    font-weight: bold;
 }
 
 #mensaje
@@ -465,10 +514,15 @@ input
 
 .reset
 {
-    background-color: orange;
+    background-color:rgb(107, 98, 92);
+    padding-bottom: 1vh;
+    border:none;
 }
 
 .submit
 {
-    background-color: green;
+    background-color: rgb(168, 252, 168);
+    padding-bottom: 1.5vh;
+    border:none;
+    font-weight: bold;
 }

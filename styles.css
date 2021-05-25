@@ -350,29 +350,80 @@ footer {
   height: 78vh;
 }
 
+#bodyContacto {
+  background-color: #01011b;
+  color: white;
+  font-weight: bold;
+  background-image: url(./IMAGENES/contacto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .contacTitle {
   text-align: left;
-  margin-left: 5vw;
+  margin: 2vh 0 0 5vw;
   font-size: 3rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.486);
+  border-radius: 0.5rem;
 }
 
 .contST {
   margin: 1vh 0 4vh 5vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.486);
+  border-radius: 0.5rem;
 }
 
 form {
   margin-left: 5vw;
+}
+form label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.486);
+  border-radius: 0.2rem;
+  padding: 0 1rem 0 0.2rem;
 }
 
 input {
   min-width: 90vw;
   padding-top: 1vh;
   margin-top: 0.5vh;
+  font-weight: bold;
+}
+
+.checkbox {
+  min-width: 5vw;
+  margin-top: 2vh;
+  -ms-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  padding: 10px;
+}
+
+.checkboxTwo {
+  min-width: 5vw;
+  margin: 2vh 0 5vh 0;
+  -ms-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  padding: 10px;
 }
 
 .consulta {
-  margin-top: 2vh;
-  width: 45.7vw;
+  margin-top: 0vh;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: bold;
 }
 
 #mensaje {
@@ -387,9 +438,14 @@ input {
 }
 
 .reset {
-  background-color: orange;
+  background-color: #6b625c;
+  padding-bottom: 1vh;
+  border: none;
 }
 
 .submit {
-  background-color: green;
+  background-color: #a8fca8;
+  padding-bottom: 1.5vh;
+  border: none;
+  font-weight: bold;
 }/*# sourceMappingURL=styles.css.map */
