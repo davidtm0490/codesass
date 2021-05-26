@@ -46,7 +46,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: rgba(14, 13, 13, 0.432);
+  background-color: rgba(14, 13, 13, 0.568);
   border-radius: 1rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -54,12 +54,28 @@ body {
   color: white;
   margin-top: 5vh;
 }
+@media (min-width: 480px) {
+  .code {
+    font-size: 700%;
+    letter-spacing: 0.9rem;
+  }
+}
+@media (min-width: 1024px) {
+  .code {
+    position: absolute;
+    top: 0vh;
+    right: 2.5vw;
+    font-size: 900%;
+    letter-spacing: 0.9rem;
+    border-bottom-right-radius: 0;
+  }
+}
 
 .creators {
   font-family: "Amiri", serif;
   text-align: center;
   font-size: 150%;
-  background-color: rgba(14, 13, 13, 0.432);
+  background-color: rgba(14, 13, 13, 0.568);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   width: -webkit-fit-content;
@@ -67,13 +83,27 @@ body {
   width: fit-content;
   color: white;
 }
+@media (min-width: 480px) {
+  .creators {
+    font-size: 200%;
+  }
+}
+@media (min-width: 1024px) {
+  .creators {
+    position: absolute;
+    top: 34vh;
+    right: 2.5vw;
+    font-size: 200%;
+    border-top-right-radius: 0;
+  }
+}
 
 .campo {
   font-family: "Roboto", sans-serif;
   font-size: 170%;
   text-align: center;
   letter-spacing: 0.5rem;
-  background-color: rgba(14, 13, 13, 0.432);
+  background-color: rgba(14, 13, 13, 0.568);
   border-radius: 1rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -81,23 +111,59 @@ body {
   color: white;
   margin-top: 10vh;
 }
+@media (min-width: 480px) {
+  .campo {
+    width: 25rem;
+    font-size: 220%;
+  }
+}
+@media (min-width: 768px) {
+  .campo {
+    width: 25rem;
+    font-size: 240%;
+  }
+}
+@media (min-width: 1024px) {
+  .campo {
+    position: absolute;
+    top: 35vh;
+    right: 2.5vw;
+  }
+}
 
 nav {
   position: fixed;
   text-align: center;
-  margin-top: 60vh;
+  margin-top: 65vh;
   width: 100vw;
-  margin-left: 35vw;
-  margin-right: 35vw;
+}
+@media (min-width: 480px) {
+  nav {
+    margin-top: 80vh;
+  }
+}
+@media (min-width: 1024px) {
+  nav {
+    margin-top: 20vh;
+  }
 }
 
 .fondoNav {
-  background-color: rgba(8, 8, 8, 0.452);
+  background-color: rgba(8, 8, 8, 0.568);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 30vw;
   margin-bottom: 3vh;
+}
+.fondoNav a {
+  font-size: 3.2vh;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  width: 10vw;
+  text-align: center;
+  margin: 0;
 }
 
 .lista1 {
@@ -106,34 +172,36 @@ nav {
   list-style: none;
   text-align: center;
 }
-
-.fondonav {
-  background-color: rgba(8, 8, 8, 0.452);
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: 30vw;
-  margin-bottom: 3vh;
+@media (min-width: 480px) {
+  .lista1 {
+    display: flex;
+    flex-direction: row;
+    padding: 0 5vw 0 5vw;
+    justify-content: space-between;
+  }
+  .lista1 li {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  .lista1 li a {
+    font-size: 1.3rem;
+  }
 }
-.fondonav a {
-  font-size: 3.2vh;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  width: 10vw;
-  text-align: center;
-  margin: 0;
+@media (min-width: 768px) {
+  .lista1 li a {
+    font-size: 1.6rem;
+  }
 }
-
-li a {
-  font-size: 3.2vh;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  width: 10vw;
-  list-style-type: none;
-  text-align: center;
-  margin-left: 1vw;
+@media (min-width: 1024px) {
+  .lista1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .lista1 li {
+    margin-top: 6vh;
+    width: 20vw;
+    border-radius: 0.5rem;
+  }
 }
 
 footer {
@@ -147,6 +215,13 @@ footer {
   color: white;
   background-image: linear-gradient(to right, black, gray);
   font-size: 2.5vh;
+}
+@media (min-width: 480px) {
+  footer {
+    font-size: 1.3rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
 }
 
 .servicios {
@@ -180,6 +255,7 @@ footer {
   padding-left: 2.5vw;
   font-size: 1rem;
   text-align: left;
+  list-style: none;
 }
 
 .contImgConsult {
@@ -401,20 +477,14 @@ input {
 .checkbox {
   min-width: 5vw;
   margin-top: 2vh;
-  -ms-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  -o-transform: scale(1.5);
+  transform: scale(1.5);
   padding: 10px;
 }
 
 .checkboxTwo {
   min-width: 5vw;
   margin: 2vh 0 5vh 0;
-  -ms-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  -o-transform: scale(1.5);
+  transform: scale(1.5);
   padding: 10px;
 }
 

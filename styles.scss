@@ -1,3 +1,8 @@
+$landscape: "min-width: 480px";
+$tablet:"min-width: 768px";
+$laptop:"min-width: 1024px";
+$monitor:"min-width: 1200px";
+
 
 //correccion margenes navegador
 html{
@@ -56,12 +61,31 @@ body{
     font-size:550% ;
     letter-spacing: 0.2rem;
     height: fit-content;
-    background-color:rgba(14, 13, 13, 0.432);
+    background-color:rgba(14, 13, 13, 0.568);
     border-radius: 1rem;
     width:fit-content;
     color: white;
     margin-top: 5vh;
+
+    @media ($landscape)
+    {
+        font-size: 700%;
+        letter-spacing: 0.9rem;
+    }
+
+    @media ($laptop)
+    {
+        position: absolute;
+        top:0vh;
+        right: 2.5vw;
+        font-size: 900% ;
+        letter-spacing: 0.9rem;
+        border-bottom-right-radius: 0;
+        
+        
+    }
 }
+
 
 
 .creators
@@ -69,11 +93,25 @@ body{
     font-family: 'Amiri', serif;
     text-align: center;
     font-size: 150%;
-    background-color:rgba(14, 13, 13, 0.432);
+    background-color:rgba(14, 13, 13, 0.568);
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     width:fit-content;
     color: white;
+    @media($landscape)
+    {
+        font-size:200% ;
+    }
+    @media($laptop)
+    {
+        position: absolute;
+        top: 34vh;
+        right: 2.5vw;
+        font-size:200% ;
+    
+        border-top-right-radius:0;
+    }
+
 }
 
 .campo
@@ -82,47 +120,50 @@ body{
     font-size: 170%;
     text-align: center;
     letter-spacing: 0.5rem;
-    background-color:rgba(14, 13, 13, 0.432);
+    background-color:rgba(14, 13, 13, 0.568);
     border-radius: 1rem;
     width:fit-content;
     color: white;
     margin-top: 10vh;
+    @media($landscape)
+    {
+        width:25rem;
+        font-size: 220%;
+    }
+    @media($tablet)
+    {
+        width:25rem;
+        font-size: 240%;
+    }
+    @media($laptop)
+    {
+      position: absolute;
+      top: 35vh;
+      right: 2.5vw;
+    }
 }
 
 nav
 {
     position: fixed;  
     text-align: center;
-    margin-top: 60vh;
+    margin-top: 65vh;
     width: 100vw;
-    margin-left: 35vw;
-    margin-right: 35vw;
+ 
+    @media($landscape)
+    {
+        margin-top:80vh
+    }
+    @media($laptop)
+    {
+        margin-top:20vh;
+    }
 }
 
 .fondoNav
 
 {
-    background-color: rgba(8, 8, 8, 0.452);
-    height: fit-content;  
-    width:30vw;
-    margin-bottom: 3vh;
-}
-
-
-.lista1
-{
-    
-    padding: 0 30% 0 35%;
-    margin: 0;    
-    list-style: none;
-    text-align: center;
-  
-}
-
-
-.fondonav
-{
-    background-color: rgba(8, 8, 8, 0.452);
+    background-color: rgba(8, 8, 8, 0.568);
     height: fit-content;  
     width:30vw;
     margin-bottom: 3vh;
@@ -137,23 +178,62 @@ nav
         text-align: center;
         margin: 0;
     }
-
 }
 
-li
+
+.lista1
 {
-    a
+    
+    padding: 0 30% 0 35%;
+    margin: 0;    
+    list-style: none;
+    text-align: center;
+    @media($landscape) //media querie para dispositivos desd 480 px
     {
-        font-size: 3.2vh;
-        color:white;
-        font-weight: bold;
-        text-decoration: none;
-        width: 10vw;
-        list-style-type: none;
-        text-align: center;
-        margin-left:1vw;
-    } 
+        display:flex;
+        flex-direction: row;
+        padding: 0 5vw 0 5vw;
+        justify-content: space-between;
+        li
+        {
+            margin-left: 2vw;
+            margin-right: 2vw;
+            a
+            {
+                font-size: 1.3rem;
+            }
+            
+        }
+        
+    }
+    @media ($tablet) //media querie para dispositivos desd 768 px
+    {
+        li
+        {
+            a
+            {
+                font-size: 1.6rem;
+            }
+            
+        }
+    }
+    @media ($laptop)
+    {
+        display:flex;
+        flex-direction: column;
+        li
+        {
+            margin-top: 6vh;
+            width: 20vw;
+            border-radius: 0.5rem;
+            
+        }
+        
+    }
+  
 }
+
+
 
 footer
 {
@@ -165,6 +245,12 @@ footer
     color: white;
     background-image: linear-gradient(to right,black,gray);
     font-size: 2.5vh;
+    @media($landscape)
+    {
+        font-size: 1.3rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+    }
 }
 
 //seccion servicios mobile first
@@ -207,6 +293,7 @@ footer
         padding-left: 2.5vw;
         font-size: 1rem;
         text-align: left;
+        list-style: none;
         
     }  
 }
@@ -471,10 +558,7 @@ input
     min-width: 5vw;
     margin-top: 2vh;
     //esto es para agrandar el checkbox
-    -ms-transform: scale(1.5); // internet explorer 
-    -moz-transform: scale(1.5); // mozzila 
-    -webkit-transform: scale(1.5); // Safari y Chrome 
-    -o-transform: scale(1.5); // Opera 
+    transform: scale(1.5);
     padding: 10px;
 }       
 
@@ -483,10 +567,7 @@ input
     min-width: 5vw;
     margin:2vh 0 5vh 0;
     //esto es para agrandar el checkbox
-    -ms-transform: scale(1.5); // internet explorer 
-    -moz-transform: scale(1.5); // mozzila 
-    -webkit-transform: scale(1.5); // Safari y Chrome 
-    -o-transform: scale(1.5); // Opera 
+    transform: scale(1.5);
     padding: 10px;
 }
 
