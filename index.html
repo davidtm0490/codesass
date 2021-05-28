@@ -16,8 +16,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <link rel="preload" href="styles.min.css" as="styles">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/ as="styles">
+    <link rel="shortcut icon" href="./IMAGENES/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- enlace animaciones wow-->
-    <link href="styles.css" rel="stylesheet"> <!-- hoja de estilo-->
+    <link href="styles.min.css" rel="stylesheet"> <!-- hoja de estilo-->
 </head>
 
 <body class="home">
@@ -28,11 +31,11 @@
     <div class="creators animate__animated animate__fadeIn">
         Creators On Demand
     </div>
-
+    <main>
     <h1 class="campo animate__animated animate__fadeIn">Diseño <br>& Desarrollo <br> WEB </h1>             
- 
+    </main>
     <!--video de fondo--> 
-    <video id="fondohome" autoplay loop muted poster="./IMAGENES/poster.png" > 
+    <video id="fondohome" autoplay loop muted playsinline poster="./IMAGENES/poster.png" > 
         <source src="./VIDEOS/videoportada.mp4" type="video/mp4"/>
         <source src="./VIDEOS/videoportada.webm" type="video/webm"/>
         <source src="./VIDEOS/videoportada.ogv" type="video/ogg"/>
