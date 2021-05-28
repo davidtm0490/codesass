@@ -262,7 +262,7 @@ body {
     padding-right: 5vw;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .code {
     position: absolute;
     top: 0rem;
@@ -273,7 +273,7 @@ body {
     margin-top: 2rem;
   }
 }
-@media (min-width: 480px) and (max-width: 824px) and (orientation: landscape) {
+@media (min-width: 480px) and (max-width: 864px) and (orientation: landscape) {
   .code {
     font-size: 600%;
     letter-spacing: 0.9rem;
@@ -312,17 +312,17 @@ body {
     padding-right: 3vw;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .creators {
-    position: absolute;
-    top: 12.5rem;
+    position: fixed;
+    top: 19.5rem;
     right: 2.5vw;
-    font-size: 200%;
+    font-size: 300%;
     border-top-right-radius: 0;
     padding: 0 1rem 0 1rem;
   }
 }
-@media (min-width: 480px) and (max-width: 824px) and (orientation: landscape) {
+@media (min-width: 480px) and (max-width: 864px) and (orientation: landscape) {
   .creators {
     font-size: 200%;
     position: fixed;
@@ -371,14 +371,14 @@ body {
     top: 18rem;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .campo {
     position: absolute;
-    top: 15rem;
+    top: 22rem;
     right: 2.5vw;
   }
 }
-@media (min-width: 480px) and (max-width: 824px) and (orientation: landscape) {
+@media (min-width: 480px) and (max-width: 864px) and (orientation: landscape) {
   .campo {
     position: fixed;
     top: 50vh;
@@ -404,12 +404,12 @@ nav {
     top: 85vh;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   nav {
-    margin-top: 20vh;
+    top: 75vh;
   }
 }
-@media (min-width: 480px) and (max-width: 824px) and (orientation: landscape) {
+@media (min-width: 480px) and (max-width: 864px) and (orientation: landscape) {
   nav {
     top: 15vh;
   }
@@ -466,11 +466,12 @@ nav {
   .lista1 {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: 0;
   }
   .lista1 li {
     margin-top: 5vh;
-    margin: 0 5vw 0 5vw;
+    margin: 0 2vw 0 2vw;
     border-radius: 0.5rem;
   }
   .lista1 li a {
@@ -478,7 +479,7 @@ nav {
     font-size: 1.7rem;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .lista1 {
     display: flex;
     flex-direction: row;
@@ -489,12 +490,16 @@ nav {
     border-radius: 0.5rem;
   }
 }
-@media (min-width: 480px) and (max-width: 824px) and (orientation: landscape) {
+@media (min-width: 480px) and (max-width: 864px) and (orientation: landscape) {
   .lista1 {
     display: flex;
     flex-direction: column;
     width: 20vw;
     padding: 0 5vw 0 10vw;
+  }
+  .lista1 li {
+    width: 15vw;
+    margin-top: 7vh;
   }
   .lista1 li a {
     font-size: 1.3rem;
@@ -520,7 +525,7 @@ footer {
     padding-bottom: 0.2vh;
   }
 }
-@media (min-width: 480px) and (max-width: 824px) and (orientation: landscape) {
+@media (min-width: 480px) and (max-width: 864px) and (orientation: landscape) {
   footer {
     font-size: 1.2rem;
   }
