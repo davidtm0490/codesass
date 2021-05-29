@@ -1,7 +1,8 @@
 $landscape: "min-width: 480px";
-$tablet:"min-width: 768px";
+$tablet: "min-width: 480px";
+$tabletxl: "min-width: 768px";
 $laptop:"min-width: 1024px";
-$monitor:"min-width: 1200px";
+$monitorxl:"min-width: 1200px";
 
 //seccion servicios mobile first
  
@@ -9,12 +10,13 @@ $monitor:"min-width: 1200px";
 {
     text-align: left;
     font-size: 3rem ;
-    margin:0 0 5vh 3vw;
+    margin:1vh 0 5vh 3vw;
     line-height: 9vh;
-    @media($tablet)
+    @media (min-width: 480px) and (max-width:767px) and (orientation: landscape) //modo landscape celulares
         {
             font-size: 4rem;
             text-align: center;
+            margin-top: 5vh;
         }
 }
 
@@ -31,11 +33,11 @@ $monitor:"min-width: 1200px";
     background-image: url(./IMAGENES/disenografico.jpeg);  
     background-size: cover;
     width: 95vw;
-    height: 25vh;
+    height: 30vh;
     margin-left: 2.5vw;
-    @media($tablet)
+    @media (min-width: 480px) and (max-width:767px) and (orientation: landscape) //modo landscape celulares
     {
-        height: 45vh;
+        height: 50vh;
     }
 }
 
@@ -71,11 +73,11 @@ $monitor:"min-width: 1200px";
     background-image: url(./IMAGENES/consultoria.jpeg);  
     background-size: cover;
     width: 95vw;
-    height: 25vh;
+    height: 30vh;
     margin-left: 2.5vw;
-    @media($tablet)
+    @media (min-width: 480px) and (max-width:767px) and (orientation: landscape) //modo landscape celulares
     {
-        height: 45vh;
+        height: 50vh;
     }
 }
 
@@ -114,11 +116,11 @@ $monitor:"min-width: 1200px";
     background-image: url(./IMAGENES/progWeb.jpeg); 
     background-size: cover;
     width: 95vw;
-    height: 25vh;
+    height: 30vh;
     margin-left: 2.5vw;
-    @media($tablet)
+    @media (min-width: 480px) and (max-width:767px) and (orientation: landscape) //modo landscape celulares
     {
-        height: 45vh;
+        height: 50vh;
     }
 }
 
@@ -156,11 +158,11 @@ $monitor:"min-width: 1200px";
     display: none;
     position: absolute;
     margin-top:0;
-    @media($tablet)
+    @media (min-width: 480px) and (max-width:767px) and (orientation: landscape) //modo landscape celulares
     {
        display: flex;
        position: absolute;
-       top: 7rem;
+       top: 2rem;
     }
     @media($laptop)
     {
@@ -210,4 +212,15 @@ $monitor:"min-width: 1200px";
 .dropdown-menu
 {
     min-width: 5rem;  
+}
+
+.footerprueba
+{ 
+    position: static;
+    
+    @media (min-width: 480px) and (max-width:767px) and (orientation: landscape) //modo landscape celulares
+    {
+        
+    }
+   
 }
