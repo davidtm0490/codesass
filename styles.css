@@ -369,10 +369,10 @@ body {
 @media (min-width: 768px) {
   .campo {
     font-size: 3.5rem;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    width: 50vw;
     position: fixed;
     top: 18rem;
+    left: 25vw;
   }
 }
 @media (min-width: 1024px) {
