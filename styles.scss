@@ -92,13 +92,14 @@ body{
 
     @media ($laptop)
     {
-        position: absolute;
+        position: fixed;
         top:0rem;
         right: 2.5vw;
-        font-size: 15rem ;
+        font-size: 12rem ;
         letter-spacing: 0.9rem;
         border-bottom-right-radius: 0;
         margin-top: 2rem;
+    
         
         
     }
@@ -146,9 +147,9 @@ body{
     @media($laptop)
     {
         position: fixed;
-        top: 19.5rem;
+        top: 16rem;
         right: 2.5vw;
-        font-size:300% ;
+        font-size:250% ;
         border-top-right-radius:0;
         padding: 0 1rem 0 1rem;
     }
@@ -205,8 +206,9 @@ body{
     @media($laptop)
     {
       position: absolute;
-      top: 22rem;
+      top: 18rem;
       right: 2.5vw;
+      font-size: 3rem;
     }
     @media (min-width: 480px) and (max-width:864px) and (orientation: landscape)
     {
@@ -235,7 +237,7 @@ nav
     }
     @media($laptop)
     {
-        top:75vh;
+        top:80vh;
     }
     @media (min-width: 480px) and (max-width:864px) and (orientation: landscape)
     {
