@@ -377,10 +377,11 @@ body {
 }
 @media (min-width: 1024px) {
   .campo {
-    position: absolute;
+    position: fixed;
     top: 18rem;
     right: 2.5vw;
     font-size: 3rem;
+    width: 50vw;
   }
 }
 @media (min-width: 480px) and (max-width: 864px) and (orientation: landscape) {
