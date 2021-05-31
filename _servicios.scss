@@ -1,8 +1,8 @@
-$landscape: "min-width: 480px";
+
 $tablet: "min-width: 480px";
 $tabletxl: "min-width: 768px";
 $laptop:"min-width: 1024px";
-$monitorxl:"min-width: 1200px";
+$monitorxl:"min-width: 2300px";
 
 //seccion servicios mobile first
  
@@ -10,14 +10,25 @@ $monitorxl:"min-width: 1200px";
 {
     text-align: left;
     font-size: 3rem ;
-    margin:1vh 0 5vh 3vw;
+    margin:1vh 0 3vh 3vw;
     line-height: 9vh;
-    @media (min-width: 480px) and (max-width:767px) and (orientation: landscape) //modo landscape celulares
+    @media (min-width: 480px) and (max-width:824px) and (orientation: landscape) //modo landscape celulares
         {
-            font-size: 4rem;
-            text-align: center;
-            margin-top: 5vh;
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 5vh;
         }
+    @media($tablet)
+    {
+        font-size: 6rem;
+        text-align: center;
+    }    
+
+    @media($monitorxl)
+    {
+        font-size: 10rem;
+       
+    }    
 }
 
 .contFlex
@@ -35,9 +46,17 @@ $monitorxl:"min-width: 1200px";
     width: 95vw;
     height: 30vh;
     margin-left: 2.5vw;
-    @media (min-width: 480px) and (max-width:767px) and (orientation: landscape) //modo landscape celulares
+    @media (min-width: 480px) and (max-width:824px) and (orientation: landscape) //modo landscape celulares
+    {
+        height: 55vh;
+    }
+    @media($tabletxl)
     {
         height: 50vh;
+    }
+    @media($laptop)
+    {
+        height: 65vh;
     }
 }
 
@@ -50,13 +69,20 @@ $monitorxl:"min-width: 1200px";
         padding-left: 2.5vw;
         @media($tablet)
         {
-            font-size: 3rem;
+            font-size: 4rem;
             margin-top: 10vh;
         }
+        @media($monitorxl)
+        {
+        font-size: 7rem;
+        margin-top:12vh ;
+       
+        }    
     }
     ul
     {
-        padding-left: 2.5vw;
+        padding-left: 3vw;
+        margin-top:1.5vh;
         font-size: 1rem;
         text-align: left;
         list-style: none;
@@ -64,6 +90,14 @@ $monitorxl:"min-width: 1200px";
         {
             font-size: 1.5rem;;
         }
+        @media($laptop)
+        {
+            font-size: 2rem;
+        }
+        @media($monitorxl)
+        {
+        font-size: 4rem;
+        }    
         
     }  
 }
@@ -75,28 +109,47 @@ $monitorxl:"min-width: 1200px";
     width: 95vw;
     height: 30vh;
     margin-left: 2.5vw;
-    @media (min-width: 480px) and (max-width:767px) and (orientation: landscape) //modo landscape celulares
+    @media (min-width: 480px) and (max-width:824px) and (orientation: landscape) //modo landscape celulares
     {
         height: 50vh;
     }
+    @media($tabletxl)
+    {
+        height: 50vh;
+    }
+    @media($laptop)
+    {
+        height: 65vh;
+    }
+
 }
 
 
 #consultoria
 {   
-    padding-top: 1rem;
+    padding-top: 1vh;
     margin-left: 0vw;
     p
     {
         width: 95vw;
         text-align: justify;
         font-size: 1rem;
-        padding-left: 2vw;
+        padding-left: 3vw;
         padding-right: 1vw;
+        margin-top: 1.5vh;
         @media($tablet)
         {
             font-size: 1.5rem;
         }
+        @media($laptop)
+        {
+            font-size: 2rem;
+        }
+        @media($monitorxl)
+        {
+        font-size: 4rem;
+        }    
+        
     }  
     h2
     {
@@ -105,8 +158,14 @@ $monitorxl:"min-width: 1200px";
         padding-left: 2.5vw;
         @media($tablet)
         {
-            font-size: 3rem;
+            font-size: 4rem;
         }
+        @media($monitorxl)
+        {
+        font-size: 7rem;
+        margin-top:8vh ;
+       
+        }    
     }    
 }
 
@@ -118,9 +177,17 @@ $monitorxl:"min-width: 1200px";
     width: 95vw;
     height: 30vh;
     margin-left: 2.5vw;
-    @media (min-width: 480px) and (max-width:767px) and (orientation: landscape) //modo landscape celulares
+    @media (min-width: 480px) and (max-width:824px) and (orientation: landscape) //modo landscape celulares
     {
         height: 50vh;
+    }
+    @media($tabletxl)
+    {
+        height: 50vh;
+    }
+    @media($laptop)
+    {
+        height: 65vh;
     }
 }
 
@@ -132,13 +199,22 @@ $monitorxl:"min-width: 1200px";
         width: 95vw;
         text-align: justify;
         font-size: 1rem;
-        padding-left: 2vw;
+        padding-left: 3vw;
         padding-right: 1vw;
+        margin-top:1.5vh;
         @media($tablet)
         {
             font-size: 1.5rem;
             margin-bottom: 5vh;
         }
+        @media($laptop)
+        {
+            font-size: 2rem;
+        }
+        @media($monitorxl)
+        {
+        font-size: 4rem;
+        }    
     }    
     h2
     {
@@ -147,9 +223,13 @@ $monitorxl:"min-width: 1200px";
         padding-left: 2.5vw;
         @media($tablet)
         {
-            font-size: 3rem;
-            
+            font-size: 4rem;  
         }
+        @media($monitorxl)
+        {
+        font-size: 7rem;
+        margin-top:8vh ;
+        }    
     }    
 }
 
@@ -158,18 +238,38 @@ $monitorxl:"min-width: 1200px";
     display: none;
     position: absolute;
     margin-top:0;
+
+    
+    @media (min-width: 480px) and (max-width:824px) and (orientation: landscape) //modo landscape celulares xl
+    {
+       display: flex;
+       position: absolute;
+       top: 21vh;     
+    }
+    
     @media (min-width: 480px) and (max-width:767px) and (orientation: landscape) //modo landscape celulares
     {
        display: flex;
        position: absolute;
-       top: 2rem;
+       top: 15vh;     
     }
-    @media($laptop)
+    
+    @media($tablet)
     {
        display: flex;
        position: absolute;
-       top: 7rem;
+       top: 15rem;
     }
+
+
+    @media($laptop)
+    {
+       top: 8rem;
+    }
+    @media($monitorxl)
+    {
+        top: 18rem;
+    }    
 }
 
 .lista1Serv
@@ -195,6 +295,37 @@ $monitorxl:"min-width: 1200px";
         }
       
     }
+    @media($laptop)
+    {
+        li
+        {
+            a
+            {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    @media($laptop)
+    {
+        li
+        {
+            a
+            {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    @media($monitorxl)
+    {
+        li
+        {
+            a
+            {
+                font-size: 3.2rem;
+            }
+        }
+    }            
+     
     
 }
 
@@ -214,13 +345,3 @@ $monitorxl:"min-width: 1200px";
     min-width: 5rem;  
 }
 
-.footerprueba
-{ 
-    position: static;
-    
-    @media (min-width: 480px) and (max-width:767px) and (orientation: landscape) //modo landscape celulares
-    {
-        
-    }
-   
-}

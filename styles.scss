@@ -1,10 +1,9 @@
 @import "servicios";
 
-$landscape: "min-width: 480px";
 $tablet: "min-width: 480px";
 $tabletxl: "min-width: 768px";
 $laptop:"min-width: 1024px";
-$monitorxl:"min-width: 1200px";
+$monitorxl:"min-width: 2300px";
 
 
 
@@ -114,6 +113,10 @@ body{
         margin-top: 1rem;
         border-bottom-right-radius: 0;
     }
+    @media ($monitorxl)
+    {
+        font-size: 20rem;
+    }
 
 }
 
@@ -160,6 +163,13 @@ body{
         top: 8rem;
         right: 1rem;
     }
+    @media ($monitorxl)
+    {
+        font-size: 5rem;
+        position: fixed;
+        top: 25rem;
+    }
+
 }
 
 .campo
@@ -221,6 +231,14 @@ body{
         right: 1rem;
         width:19rem;
         font-size: 8vh; 
+    }
+
+    @media ($monitorxl)
+    {
+        font-size: 8rem;
+        position: fixed;
+        top: 35rem;
+        width: 45vw;
     }
 }
 
@@ -355,15 +373,23 @@ nav
             }
         }
     }
+    @media ($monitorxl)
+    {   
+        li{
+            a
+            { 
+            font-size: 4rem;
+            }
+        }
+       
+    }
   
 }
-
-
 
 footer
 {
     position: fixed;
-    bottom: 0%;
+    bottom: 0;
     width: 100%;
     height: fit-content;
     text-align: center;
