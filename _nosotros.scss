@@ -1,0 +1,114 @@
+// seccion nosotros mobile first
+$tablet: "min-width: 481px";
+$tabletxl: "min-width: 768px";
+$laptop:"min-width: 1024px";
+$monitorxl:"min-width: 2300px";
+
+
+.gridNosotros
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap 
+}
+
+.navNosotros
+{
+    display: none;
+    
+}
+
+#titNosotros
+{
+    text-align: left;
+    margin-left: 5vw;
+    margin-bottom: 3vh;
+
+    h1
+    {
+        font-size: 3.2rem;
+    }    
+}
+
+#imgMariluna
+{
+    background-image: url(./IMAGENES/mariluna.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 0rem -2rem ;
+    height: 30vh;
+    width: 100vw;
+    margin-bottom: 1vh;
+
+}
+
+.mariluna
+{
+    text-align: left;
+    padding-left: 1vw;
+
+    h2
+    {
+        font-size: 2rem;
+    }
+  
+
+}
+
+#imgMariluna2
+{
+    background-image: url(./IMAGENES/imgMariluna2.jpg);
+    height: 30vh;
+    width: 100vw;
+    background-size: cover;
+    margin-top: 3vh;
+    padding-left: 0;
+}
+
+.divisor
+{ 
+     background-color:black;
+     height: 0.2rem; 
+     margin: 2.5rem 0 2.5rem 0;
+}
+
+
+#imgDavid
+{
+    background-image: url(./IMAGENES/imgDavid.jpg);
+    height: 30vh;
+    width: 100vw;
+    background-size: cover;
+    margin-bottom: 3vh;
+}
+
+.david
+{
+    text-align: left;
+    padding-left: 1vw;
+    h2
+    {
+        font-size: 2rem;
+    }
+}
+
+#imgDavid2
+{
+    background-image: url(./IMAGENES/programweb1.jpg);
+    height: 30vh;
+    width: 100vw;
+    background-size: cover;
+    margin-top: 3vh;
+    margin-bottom: 8vh;
+}
+
+.dropdownNos
+{
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5rem;
+    @media($tablet)
+    {
+       display: none;
+    }
+}
