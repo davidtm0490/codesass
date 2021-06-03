@@ -245,10 +245,11 @@ body{
 
 nav
 {
-    position: fixed;  
+    position: absolute;  
     text-align: center;
-    top: 65vh;
+    top: 60vh;
     width: 100vw;
+    
  
     @media (min-width: 480px) and (max-width:767px) and (orientation: landscape)
     {
@@ -274,9 +275,11 @@ nav
 {
     background-color: rgba(8, 8, 8, 0.568);
     height: fit-content;  
-    width:30vw;
+    width:fit-content;
     margin-bottom: 3vh;
-
+    padding: 0 2vw 0 2vw;
+    border-radius: 0.5rem;
+    
     a
     {
         font-size: 3.2vh;
@@ -316,6 +319,7 @@ nav
         
         li
         {  
+            
             a
             {
                 font-size: 1.3rem;   
@@ -392,24 +396,35 @@ footer
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: fit-content;
+    height: 6vh;
     text-align: center;
     color: white;
     background-image: linear-gradient(to right,rgba(0, 0, 0, 0.575),rgba(128, 128, 128, 0.514));
     font-size: 2.5vh;
 
-    @media (min-width: 480px) and (max-width:767px) and (orientation: landscape)
+    p
     {
-        font-size: 1rem;
-        padding-top: 0.2vh;
-        padding-bottom: 0.2vh;
-        
-    }
-    @media (min-width: 480px) and (max-width:864px) and (orientation: landscape) //modo landscape celulares xl
-    {
-        font-size: 1.2rem;
-        
-    }
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    
+        @media (min-width: 480px) and (max-width:767px) and (orientation: landscape)
+        {
+            font-size: 1rem;
+            margin-top: 0.5vh;
+            margin-bottom: 0.5vh;
+            height: 8vh;
+            
+        }
+    
+        @media (min-width: 480px) and (max-width:864px) and (orientation: landscape) //modo landscape celulares xl
+        {
+            font-size: 1.2rem;
+            margin-top: 0.5vh;
+            margin-bottom: 1vh;
+            
+        }
+
+    } 
    
 }
 

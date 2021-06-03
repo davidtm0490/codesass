@@ -240,7 +240,7 @@ $monitorxl:"min-width: 2300px";
     margin-top:0;
 
     
-    @media (min-width: 480px) and (max-width:824px) and (orientation: landscape) //modo landscape celulares xl
+   /* @media (min-width: 480px) and (max-width:824px) and (orientation: landscape) //modo landscape celulares xl
     {
        display: flex;
        position: absolute;
@@ -256,14 +256,15 @@ $monitorxl:"min-width: 2300px";
     
     @media($tablet)
     {
-       display: flex;
-       position: absolute;
+       
        top: 10rem;
-    }
+    }*/
 
 
     @media($laptop)
     {
+        display: flex;
+       position: absolute;
        top: 8rem;
     }
     @media($monitorxl)
@@ -334,7 +335,7 @@ $monitorxl:"min-width: 2300px";
     position: fixed;
     top: 0.5rem;
     right: 0.5rem;
-    @media($tablet)
+    @media($laptop)
     {
        display: none;
     }

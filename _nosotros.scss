@@ -9,7 +9,21 @@ $monitorxl:"min-width: 2300px";
 {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap 
+    flex-wrap: wrap; 
+    @media (orientation: landscape)
+    {
+        display: grid;
+        grid-template-areas:
+        "head nav"
+        "imagen1 texto1"
+        "imagen2 texto1"
+        "separador separador"
+        "imagen3 texto2"
+        "imagen4 texto2"
+        "footer footer";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 5% 20% 20% 5% 20% 20% 10%;
+    }
 }
 
 .navNosotros
@@ -20,6 +34,7 @@ $monitorxl:"min-width: 2300px";
 
 #titNosotros
 {
+    
     text-align: left;
     margin-left: 5vw;
     margin-bottom: 3vh;
@@ -28,6 +43,10 @@ $monitorxl:"min-width: 2300px";
     {
         font-size: 3.2rem;
     }    
+    @media (orientation: landscape)
+    {
+        grid-area: head;
+    }
 }
 
 #imgMariluna
@@ -39,7 +58,14 @@ $monitorxl:"min-width: 2300px";
     height: 30vh;
     width: 100vw;
     margin-bottom: 1vh;
-
+    @media($tabletxl)
+    {
+        height: 50vh;
+    }
+    @media (orientation: landscape)
+    {
+        grid-area: imagen1;
+    }
 }
 
 .mariluna
@@ -63,6 +89,12 @@ $monitorxl:"min-width: 2300px";
     background-size: cover;
     margin-top: 3vh;
     padding-left: 0;
+    
+    @media($tabletxl)
+    {
+        height: 50vh;
+    }
+    grid-area: imagen2;
 }
 
 .divisor
@@ -75,11 +107,15 @@ $monitorxl:"min-width: 2300px";
 
 #imgDavid
 {
-    background-image: url(./IMAGENES/imgDavid.jpg);
+    background-image: url(./IMAGENES/davidexpectxD.jpg);
     height: 30vh;
     width: 100vw;
-    background-size: cover;
+    background-size:cover;
     margin-bottom: 3vh;
+    @media($tabletxl)
+    {
+        height: 50vh;
+    }
 }
 
 .david
@@ -100,6 +136,10 @@ $monitorxl:"min-width: 2300px";
     background-size: cover;
     margin-top: 3vh;
     margin-bottom: 8vh;
+    @media($tabletxl)
+    {
+        height: 50vh;
+    }
 }
 
 .dropdownNos
@@ -107,8 +147,14 @@ $monitorxl:"min-width: 2300px";
     position: fixed;
     top: 0.5rem;
     right: 0.5rem;
+    @media (orientation: landscape)
+    {
+        display: initial;
+        grid-area: nav;
+    }
     @media($tablet)
     {
        display: none;
     }
+  
 }
