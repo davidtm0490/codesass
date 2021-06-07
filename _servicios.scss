@@ -234,112 +234,16 @@ $monitorxl:"min-width: 2300px";
     }    
 }
 
-.navServ
-{
-    display: none;
-    position: absolute;
-    margin-top:0;
-
-    
-   /* @media (min-width: 480px) and (max-width:824px) and (orientation: landscape) //modo landscape celulares xl
-    {
-       display: flex;
-       position: absolute;
-       top: 21vh;     
-    }
-    
-    @media (min-width: 480px) and (max-width:767px) and (orientation: landscape) //modo landscape celulares
-    {
-       display: flex;
-       position: absolute;
-       top: 15vh;     
-    }
-    
-    @media($tablet)
-    {
-       
-       top: 10rem;
-    }*/
 
 
-    @media($laptop)
-    {
-        display: flex;
-       position: absolute;
-       top: 8rem;
-    }
-    @media($monitorxl)
-    {
-        top: 18rem;
-    }    
-}
-
-.lista1Serv
-{
-    @media($tablet)
-    {
-       width: 100vw;
-       padding-left: 2rem;
-       padding-right: 2rem;
-       list-style: none;
-       display: flex;
-       flex-direction: row;
-       justify-content: space-between;
-       li
-        {
-            margin-left: 2vw;
-            margin-right: 2vw;
-            a
-            {
-                font-size: 1.3rem;
-            }
-            
-        }
-      
-    }
-    @media($laptop)
-    {
-        li
-        {
-            a
-            {
-                font-size: 1.6rem;
-            }
-        }
-    }
-    @media($laptop)
-    {
-        li
-        {
-            a
-            {
-                font-size: 1.6rem;
-            }
-        }
-    }
-    @media($monitorxl)
-    {
-        li
-        {
-            a
-            {
-                font-size: 3.2rem;
-            }
-        }
-    }            
-     
-    
-}
 
 .dropdown
 {
-    position: absolute;
+    position: fixed;
     top: 0.5rem;
     right: 0.5rem;
-    @media($laptop)
-    {
-       display: none;
-    }
+    
+   
 }
 
 .dropdown-menu
@@ -362,11 +266,7 @@ $monitorxl:"min-width: 2300px";
     {
         padding-top: 1vh;
     } 
-    @media($tablet)
-    {
-        height: 10vh;
-    }
-    
+   
 }
 
 

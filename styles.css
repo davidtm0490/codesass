@@ -1,3 +1,13 @@
+html {
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
 .servicios {
   text-align: left;
   font-size: 3rem;
@@ -229,86 +239,10 @@
   }
 }
 
-.navServ {
-  display: none;
-  position: absolute;
-  margin-top: 0;
-  /* @media (min-width: 480px) and (max-width:824px) and (orientation: landscape) //modo landscape celulares xl
-   {
-      display: flex;
-      position: absolute;
-      top: 21vh;     
-   }
-
-   @media (min-width: 480px) and (max-width:767px) and (orientation: landscape) //modo landscape celulares
-   {
-      display: flex;
-      position: absolute;
-      top: 15vh;     
-   }
-
-   @media($tablet)
-   {
-
-      top: 10rem;
-   }*/
-}
-@media (min-width: 1024px) {
-  .navServ {
-    display: flex;
-    position: absolute;
-    top: 8rem;
-  }
-}
-@media (min-width: 2300px) {
-  .navServ {
-    top: 18rem;
-  }
-}
-
-@media (min-width: 481px) {
-  .lista1Serv {
-    width: 100vw;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .lista1Serv li {
-    margin-left: 2vw;
-    margin-right: 2vw;
-  }
-  .lista1Serv li a {
-    font-size: 1.3rem;
-  }
-}
-@media (min-width: 1024px) {
-  .lista1Serv li a {
-    font-size: 1.6rem;
-  }
-}
-@media (min-width: 1024px) {
-  .lista1Serv li a {
-    font-size: 1.6rem;
-  }
-}
-@media (min-width: 2300px) {
-  .lista1Serv li a {
-    font-size: 3.2rem;
-  }
-}
-
 .dropdown {
-  position: absolute;
+  position: fixed;
   top: 0.5rem;
   right: 0.5rem;
-}
-@media (min-width: 1024px) {
-  .dropdown {
-    display: none;
-  }
 }
 
 .dropdown-menu {
@@ -327,11 +261,6 @@
 }
 #fserv p {
   padding-top: 1vh;
-}
-@media (min-width: 481px) {
-  #fserv {
-    height: 10vh;
-  }
 }
 
 .gridNosotros {
@@ -354,7 +283,7 @@
 
 #titNosotros {
   text-align: left;
-  margin-left: 2vw;
+  margin-left: 3vw;
 }
 #titNosotros h1 {
   font-size: 3.2rem;
@@ -365,6 +294,14 @@
     text-align: left;
   }
 }
+@media (min-width: 1024px) {
+  #titNosotros {
+    text-align: center;
+  }
+  #titNosotros h1 {
+    font-size: 4.5rem;
+  }
+}
 
 #mainNosotros {
   grid-area: slogan;
@@ -372,10 +309,16 @@
   text-align: center;
   margin-top: 1vh;
 }
+@media (min-width: 1024px) {
+  #mainNosotros {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
 
 #hrNos {
-  margin-top: 0vh;
-  margin-bottom: 2vh;
+  margin-top: 1vh;
+  margin-bottom: 3vh;
   width: 100vw;
   grid-area: hr;
 }
@@ -426,6 +369,19 @@
   .mariluna p {
     font-size: 1.2rem;
     line-height: 2.3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .mariluna {
+    margin-top: 25vh;
+  }
+  .mariluna h2 {
+    font-size: 4.8rem;
+    margin-bottom: 10vh;
+  }
+  .mariluna p {
+    font-size: 2.2rem;
+    line-height: 5rem;
   }
 }
 
@@ -505,6 +461,19 @@
   font-size: 1.2rem;
   line-height: 2.3rem;
 }
+@media (min-width: 1024px) {
+  .david {
+    margin-top: 25vh;
+  }
+  .david h2 {
+    font-size: 4.8rem;
+    margin-bottom: 10vh;
+  }
+  .david p {
+    font-size: 2.2rem;
+    line-height: 5rem;
+  }
+}
 
 #imgDavid2 {
   background-image: url(./IMAGENES/programweb1.jpg);
@@ -532,9 +501,9 @@
 .dropdownNos {
   position: fixed;
   top: 0.5rem;
-  right: 0.5rem;
+  right: 0.8rem;
 }
-.fnos {
+#fnos {
   position: relative;
   bottom: 0;
   width: 100%;
@@ -546,14 +515,63 @@
   grid-area: footer;
 }
 
-html {
-  height: 100vh;
+.d-block {
+  margin-bottom: 2rem;
 }
 
-body {
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
+#tituloP {
+  margin-bottom: 3vh;
+}
+#tituloP h1 {
+  text-align: left;
+  font-size: 3rem;
+  margin-left: 5vw;
+}
+
+#mainPort {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 5vh;
+}
+
+#subtituloPort {
+  text-align: center;
+}
+
+.carousel-indicators {
+  margin-bottom: 2rem;
+}
+
+#LPuno {
+  background-image: url(./IMAGENES/imgDavid.jpg);
+  background-size: cover;
+  height: 78vh;
+}
+
+#LPdos {
+  background-image: url(./IMAGENES/imgMariluna.jpg);
+  background-size: cover;
+  height: 78vh;
+}
+
+#LPtres {
+  background-image: url(./IMAGENES/ImgDavid2.jpg);
+  background-size: cover;
+  height: 78vh;
+}
+
+#footerPort {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 6vh;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.575), rgba(128, 128, 128, 0.514));
+  font-size: 1rem;
+}
+#footerPort p {
+  padding-top: 1vh;
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -922,40 +940,6 @@ nav {
     margin-top: 0.5vh;
     margin-bottom: 1vh;
   }
-}
-
-.d-block {
-  margin-bottom: 2rem;
-}
-
-#tituloP {
-  text-align: center;
-}
-
-#subtituloPort {
-  text-align: center;
-}
-
-.carousel-indicators {
-  margin-bottom: 2rem;
-}
-
-#LPuno {
-  background-image: url(./IMAGENES/imgDavid.jpg);
-  background-size: cover;
-  height: 78vh;
-}
-
-#LPdos {
-  background-image: url(./IMAGENES/imgMariluna.jpg);
-  background-size: cover;
-  height: 78vh;
-}
-
-#LPtres {
-  background-image: url(./IMAGENES/ImgDavid2.jpg);
-  background-size: cover;
-  height: 78vh;
 }
 
 #bodyContacto {

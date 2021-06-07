@@ -14,10 +14,13 @@
 </head>
 
 <body>
-
-    <h1 id="tituloP">Portfolio</h1> <!--ESTO ES A MODO DE EJEMPLO DEL ENLACE, 
-    SERIA MAS RECOMENDBLE HACER UN HTML PARA CADA SECCION DEL PORTAFOLIO O UN SOLO HTML Y ANCLAR CADA BOTON
-DE LA LISTA DESPLEGABLE A UNA PARTE DE ESA PAGINA??-->
+  <Header id="tituloP">
+    <h1 >Portfolio</h1>
+  </Header> 
+  <main id="mainPort">
+    <p>Te presentamos algunos de nuestros proyectos publicados y con mejor ranking en la web</p>
+  </main>
+  <hr>
 
 
 <!--carousel de diseo grafico-->
@@ -144,26 +147,7 @@ DE LA LISTA DESPLEGABLE A UNA PARTE DE ESA PAGINA??-->
     </a>
   </div>
 
-  <!--navegador version tablet y web-->
-
-    <nav class="navPortfolio animate__animated animate__backInUp animate__slow" >
-        <ul class="lista1">
-            <li class="fondoNav"><a href="../index.html" >Home</a> </li>      
-            <li class="fondoNav"><a href="./Servicios.html" >Servicios</a></li>   
-            <li class="fondoNav"><a href="./Nosotros.html" >Nosotros</a></li>
-            <li class="fondoNav"><a href="#" >Portfolios</a>
-                <ul class="sublista">
-                    <li> <a href="./landingpages.html"> landing-pages</a></li>
-                    <li> <a href="./ecommerce.html"> E-commerce</a></li>
-                    <li> <a href="./webpages.html"> Web-Pages</a></li>
-                </ul>
-            </li>  
-            <li class="fondoNav"><a href="./Contacto.html" >Contacto</a></li> 
-        </ul>
-    </nav>
-
-
-<!-- navegador colapsado para pantallas de celular-->
+<!-- navegador colapsado bootstrap-->
 
     <div class="dropdown">
         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -178,7 +162,7 @@ DE LA LISTA DESPLEGABLE A UNA PARTE DE ESA PAGINA??-->
         </div>
       </div> 
 
-      <footer>
+      <footer id="footerPort">
         <p>All rights reserved</p>
       </footer>     
 

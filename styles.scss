@@ -1,13 +1,3 @@
-@import "servicios";
-@import "nosotros";
-
-$tablet: "min-width: 480px";
-$tabletxl: "min-width: 768px";
-$laptop:"min-width: 1024px";
-$monitorxl:"min-width: 2300px";
-
-
-
 //correccion margenes navegador
 html{
     height: 100vh;
@@ -17,6 +7,16 @@ body{
     margin:0;
     padding:0;
 }
+
+
+@import "servicios";
+@import "nosotros";
+@import "portfolio";
+
+$tablet: "min-width: 480px";
+$tabletxl: "min-width: 768px";
+$laptop:"min-width: 1024px";
+$monitorxl:"min-width: 2300px";
 
 
 
@@ -430,47 +430,6 @@ nav
 
 
 
-//seccion portfolio mobile first
-.d-block
-{
-    margin-bottom: 2rem;
-}
-
-#tituloP
-{
-    text-align: center;
-}
-
-#subtituloPort
-{
-    text-align: center;
-}
-
-.carousel-indicators
-{
-    margin-bottom: 2rem;    
-}
-//id de imagenes de los carrousels
-#LPuno
-{
-    background-image: url(./IMAGENES/imgDavid.jpg);
-    background-size: cover;
-    height:78vh;
-}
-
-#LPdos
-{
-    background-image: url(./IMAGENES/imgMariluna.jpg);
-    background-size: cover;
-    height:78vh;
-}
-
-#LPtres
-{
-    background-image: url(./IMAGENES/ImgDavid2.jpg);
-    background-size: cover;
-    height:78vh;
-}
 
 //Estilos seccion Contacto mobile first
 #bodyContacto
