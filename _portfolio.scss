@@ -5,6 +5,10 @@ $tabletxl: "min-width: 768px";
 $laptop:"min-width: 1024px";
 $monitorxl:"min-width: 2300px";
 
+body
+{
+background-color: rgba(0, 59, 99, 0.986);
+}
 .d-block
 {
     margin-bottom: 2rem;
@@ -12,22 +16,29 @@ $monitorxl:"min-width: 2300px";
 
 #tituloP
 {
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
     
     h1 
     {
     text-align: left;
-    font-size: 3rem;
     margin-left: 5vw;
+    padding-top: 2vh;
+    font-size: 3rem;
     }
     
-    @media ($tabletxl)
-    {
-        h1 
+    @media ($tabletxl) 
+    {   h1 
         {
             text-align: center;
             font-size: 5rem; 
             margin-left: 0;
+        }
+    }
+    @media (orientation:landscape)
+    {
+        h1 
+        {
+            text-align: center;   
         }
     }
         
@@ -45,12 +56,15 @@ $monitorxl:"min-width: 2300px";
     }
     @media ($tabletxl)
     {
-        p 
-        {
-            text-align: center;
-            font-size:1.5rem ;
-             
-        }
+       
+        text-align: center;
+        font-size:1.5rem ;   
+        
+    }
+    @media (orientation:landscape)
+    {
+        color: white;  
+        padding-bottom: 2vh;
     }
 }
 
@@ -59,13 +73,20 @@ $monitorxl:"min-width: 2300px";
 #subtituloPort
 {
     text-align: center;
-    margin-bottom:2vh;
+    margin-bottom:0vh;
     margin-top: 2vh;
+    font-size:2.5rem ;
+    
     @media ($tabletxl) 
     {
         text-align: center;
         font-size:3.5rem ;
             
+    }
+    @media (orientation:landscape)
+    {
+        color: white;  
+        padding-bottom: 6vh;
     }
    
 }
@@ -77,16 +98,22 @@ $monitorxl:"min-width: 2300px";
 
 //id de imagenes de los carrousels
 #DGuno
+
 {
     background-image: url(./IMAGENES/portfolio/graphic/diseno1.jpg);
     background-size:contain;
     background-position: center;
-    height:78vh;
+    height:65vh;
     margin-bottom: 3vh;
     background-repeat: no-repeat;
-    @media($tablet)
+    @media($tablet) 
     {
         background-image: url(./IMAGENES/portfolio/graphic/disenot1.jpg); 
+    
+    }
+    @media (orientation:landscape)
+    {
+        background-image: url(./IMAGENES/portfolio/graphic/diseno1lc.jpg);
     }
     
    
@@ -96,7 +123,7 @@ $monitorxl:"min-width: 2300px";
 {
     background-image: url(./IMAGENES/portfolio/graphic/diseno2.jpg);
     background-size:contain;
-    height:78vh;
+    height:65vh;
     background-position: center;
     background-repeat: no-repeat;
     @media($tablet)
@@ -110,7 +137,7 @@ $monitorxl:"min-width: 2300px";
     background-image: url(./IMAGENES/portfolio/graphic/diseno3.jpg);
     background-size:contain;
     background-position: center;
-    height:78vh;
+    height:65vh;
     background-repeat: no-repeat;
     @media($tablet)
     {
@@ -122,7 +149,7 @@ $monitorxl:"min-width: 2300px";
 {
     background-image: url(./IMAGENES/portfolio/graphic/diseno4.jpg);
     background-size:contain;
-    height:78vh;
+    height:65vh;
     background-position: center;
     background-repeat: no-repeat;
     @media($tablet)
@@ -135,7 +162,7 @@ $monitorxl:"min-width: 2300px";
 {
     background-image: url(./IMAGENES/portfolio/graphic/diseno5.jpg);
     background-size:contain;
-    height:78vh;
+    height:65vh;
     background-position: center;
     background-repeat: no-repeat;
     @media($tablet)
