@@ -60,6 +60,7 @@ $monitorxl:"min-width: 2300px";
 {
     text-align: center;
     margin-bottom:3vh;
+    margin-top: 3vh;
     @media ($tabletxl) 
     {
         text-align: center;
@@ -99,12 +100,26 @@ $monitorxl:"min-width: 2300px";
     height:78vh;
 }
 
+#DGcuatro
+{
+    background-image: url(./IMAGENES/portfolio/graphic/diseno4.jpg);
+    background-size: cover;
+    height:78vh;
+}
+
+#DGcinco
+{
+    background-image: url(./IMAGENES/portfolio/graphic/diseno5.jpg);
+    background-size: cover;
+    height:78vh;
+}
+
 #PWuno
 {
     background-image: url(./IMAGENES/portfolio/webs/PWUNO.png);
     background-size:contain;
     background-repeat: no-repeat;
-    height:78vh;
+    height:65vh;
     margin-bottom: 3vh;
    
 }
@@ -114,14 +129,31 @@ $monitorxl:"min-width: 2300px";
     background-image: url(./IMAGENES/portfolio/webs/PWDOS.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height:78vh;
+    height:65vh;
 }
 
 #PWtres
 {
-    background-image: url(./IMAGENES/portfolio/webs/img2.jpg);
-    background-size: cover;
-    height:78vh;
+    background-image: url(./IMAGENES/portfolio/webs/PWTRES.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:65vh;
+}
+
+#PWcuatro
+{
+    background-image: url(./IMAGENES/portfolio/webs/PWCUATRO.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:65vh;
+}
+
+#PWcinco
+{
+    background-image: url(./IMAGENES/portfolio/webs/PWCINCO.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:65vh;
 }
 
 #footerPort

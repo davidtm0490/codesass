@@ -14,6 +14,7 @@ body {
   margin: 1vh 0 3vh 3vw;
   line-height: 9vh;
 }
+
 @media (min-width: 480px) and (max-width: 824px) and (orientation: landscape) {
   .servicios {
     font-size: 4rem;
@@ -21,12 +22,14 @@ body {
     margin-top: 5vh;
   }
 }
+
 @media (min-width: 481px) {
   .servicios {
     font-size: 5rem;
     text-align: center;
   }
 }
+
 @media (min-width: 2300px) {
   .servicios {
     font-size: 10rem;
@@ -34,9 +37,15 @@ body {
 }
 
 .contFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   justify-items: center;
 }
 
@@ -47,16 +56,19 @@ body {
   height: 30vh;
   margin-left: 2.5vw;
 }
+
 @media (min-width: 480px) and (max-width: 824px) and (orientation: landscape) {
   .contImgDiseno {
     height: 55vh;
   }
 }
+
 @media (min-width: 768px) {
   .contImgDiseno {
     height: 50vh;
   }
 }
+
 @media (min-width: 1024px) {
   .contImgDiseno {
     height: 65vh;
@@ -68,18 +80,21 @@ body {
   font-size: 200%;
   padding-left: 2.5vw;
 }
+
 @media (min-width: 481px) {
   #disenoGrafico h2 {
     font-size: 3rem;
     margin-top: 10vh;
   }
 }
+
 @media (min-width: 2300px) {
   #disenoGrafico h2 {
     font-size: 7rem;
     margin-top: 12vh;
   }
 }
+
 #disenoGrafico ul {
   padding-left: 3vw;
   margin-top: 1.5vh;
@@ -87,16 +102,19 @@ body {
   text-align: left;
   list-style: none;
 }
+
 @media (min-width: 481px) {
   #disenoGrafico ul {
     font-size: 1.2rem;
   }
 }
+
 @media (min-width: 1024px) {
   #disenoGrafico ul {
     font-size: 2rem;
   }
 }
+
 @media (min-width: 2300px) {
   #disenoGrafico ul {
     font-size: 4rem;
@@ -110,16 +128,19 @@ body {
   height: 30vh;
   margin-left: 2.5vw;
 }
+
 @media (min-width: 480px) and (max-width: 824px) and (orientation: landscape) {
   .contImgConsult {
     height: 50vh;
   }
 }
+
 @media (min-width: 768px) {
   .contImgConsult {
     height: 50vh;
   }
 }
+
 @media (min-width: 1024px) {
   .contImgConsult {
     height: 65vh;
@@ -130,6 +151,7 @@ body {
   padding-top: 1vh;
   margin-left: 0vw;
 }
+
 #consultoria p {
   width: 95vw;
   text-align: justify;
@@ -139,31 +161,37 @@ body {
   margin-top: 1.5vh;
   line-height: 2rem;
 }
+
 @media (min-width: 481px) {
   #consultoria p {
     font-size: 1.2rem;
   }
 }
+
 @media (min-width: 1024px) {
   #consultoria p {
     font-size: 2rem;
   }
 }
+
 @media (min-width: 2300px) {
   #consultoria p {
     font-size: 4rem;
   }
 }
+
 #consultoria h2 {
   text-align: left;
   font-size: 200%;
   padding-left: 2.5vw;
 }
+
 @media (min-width: 481px) {
   #consultoria h2 {
     font-size: 3rem;
   }
 }
+
 @media (min-width: 2300px) {
   #consultoria h2 {
     font-size: 7rem;
@@ -178,16 +206,19 @@ body {
   height: 30vh;
   margin-left: 2.5vw;
 }
+
 @media (min-width: 480px) and (max-width: 824px) and (orientation: landscape) {
   .contImgWeb {
     height: 50vh;
   }
 }
+
 @media (min-width: 768px) {
   .contImgWeb {
     height: 50vh;
   }
 }
+
 @media (min-width: 1024px) {
   .contImgWeb {
     height: 65vh;
@@ -198,6 +229,7 @@ body {
   padding-top: 1rem;
   margin-bottom: 8vh;
 }
+
 #desarrolloWeb p {
   width: 95vw;
   text-align: justify;
@@ -206,32 +238,38 @@ body {
   padding-right: 1vw;
   margin-top: 1.5vh;
 }
+
 @media (min-width: 481px) {
   #desarrolloWeb p {
     font-size: 1.2rem;
     margin-bottom: 5vh;
   }
 }
+
 @media (min-width: 1024px) {
   #desarrolloWeb p {
     font-size: 2rem;
   }
 }
+
 @media (min-width: 2300px) {
   #desarrolloWeb p {
     font-size: 4rem;
   }
 }
+
 #desarrolloWeb h2 {
   text-align: left;
   font-size: 200%;
   padding-left: 2.5vw;
 }
+
 @media (min-width: 481px) {
   #desarrolloWeb h2 {
     font-size: 3rem;
   }
 }
+
 @media (min-width: 2300px) {
   #desarrolloWeb h2 {
     font-size: 7rem;
@@ -256,24 +294,36 @@ body {
   height: 6vh;
   text-align: center;
   color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.575)), to(rgba(128, 128, 128, 0.514)));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.575), rgba(128, 128, 128, 0.514));
   font-size: 1rem;
 }
+
 #fserv p {
   padding-top: 1vh;
 }
 
 .gridNosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 @media (min-width: 480px) and (orientation: landscape) {
   .gridNosotros {
+    display: -ms-grid;
     display: grid;
-    grid-template-areas: "head head" "slogan slogan" "hr hr" "imagen1 textom" "imagen2 textom" "separador separador" "imagen3 textod" "imagen4 textod" "footer footer";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
+        grid-template-areas: "head head" "slogan slogan" "hr hr" "imagen1 textom" "imagen2 textom" "separador separador" "imagen3 textod" "imagen4 textod" "footer footer";
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
 }
 
@@ -285,15 +335,18 @@ body {
   text-align: left;
   margin-left: 3vw;
 }
+
 #titNosotros h1 {
   font-size: 3.2rem;
 }
+
 @media (min-width: 480px) and (orientation: landscape) {
   #titNosotros {
     grid-area: head;
     text-align: left;
   }
 }
+
 @media (min-width: 1024px) {
   #titNosotros {
     text-align: center;
@@ -309,6 +362,7 @@ body {
   text-align: center;
   margin-top: 1vh;
 }
+
 @media (min-width: 1024px) {
   #mainNosotros {
     text-align: center;
@@ -332,11 +386,13 @@ body {
   width: 100vw;
   margin-bottom: 1vh;
 }
+
 @media (min-width: 768px) {
   #imgMariluna {
     height: 60vh;
   }
 }
+
 @media (min-width: 480px) and (orientation: landscape) {
   #imgMariluna {
     grid-area: imagen1;
@@ -351,9 +407,11 @@ body {
   text-align: left;
   padding-left: 1vw;
 }
+
 .mariluna h2 {
   font-size: 2rem;
 }
+
 @media (min-width: 480px) and (orientation: landscape) {
   .mariluna {
     width: 50vw;
@@ -371,6 +429,7 @@ body {
     line-height: 2.3rem;
   }
 }
+
 @media (min-width: 1024px) {
   .mariluna {
     margin-top: 25vh;
@@ -393,11 +452,13 @@ body {
   margin-top: 3vh;
   padding-left: 0;
 }
+
 @media (min-width: 768px) {
   #imgMariluna2 {
     height: 50vh;
   }
 }
+
 @media (min-width: 480px) and (orientation: landscape) {
   #imgMariluna2 {
     grid-area: imagen2;
@@ -422,11 +483,13 @@ body {
   background-size: cover;
   margin-bottom: 3vh;
 }
+
 @media (min-width: 768px) {
   #imgDavid {
     height: 50vh;
   }
 }
+
 @media (min-width: 480px) and (orientation: landscape) {
   #imgDavid {
     grid-area: imagen3;
@@ -441,9 +504,11 @@ body {
   text-align: left;
   padding-left: 1vw;
 }
+
 .david h2 {
   font-size: 2rem;
 }
+
 @media (min-width: 480px) and (orientation: landscape) {
   .david {
     width: 50vw;
@@ -453,14 +518,17 @@ body {
     text-align: center;
   }
 }
+
 .david h2 {
   font-size: 4rem;
   margin-bottom: 4vh;
 }
+
 .david p {
   font-size: 1.2rem;
   line-height: 2.3rem;
 }
+
 @media (min-width: 1024px) {
   .david {
     margin-top: 25vh;
@@ -483,11 +551,13 @@ body {
   margin-top: 3vh;
   margin-bottom: 8vh;
 }
+
 @media (min-width: 768px) {
   #imgDavid2 {
     height: 50vh;
   }
 }
+
 @media (min-width: 480px) and (orientation: landscape) {
   #imgDavid2 {
     grid-area: imagen4;
@@ -503,6 +573,7 @@ body {
   top: 0.5rem;
   right: 0.8rem;
 }
+
 #fnos {
   position: relative;
   bottom: 0;
@@ -510,6 +581,7 @@ body {
   height: 6vh;
   text-align: center;
   color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.575)), to(rgba(128, 128, 128, 0.514)));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.575), rgba(128, 128, 128, 0.514));
   font-size: 1rem;
   grid-area: footer;
@@ -522,11 +594,13 @@ body {
 #tituloP {
   margin-bottom: 3vh;
 }
+
 #tituloP h1 {
   text-align: left;
   font-size: 3rem;
   margin-left: 5vw;
 }
+
 @media (min-width: 768px) {
   #tituloP h1 {
     text-align: center;
@@ -540,9 +614,11 @@ body {
   font-size: 1rem;
   margin: 0;
 }
+
 #mainPort p {
   margin: 0;
 }
+
 @media (min-width: 768px) {
   #mainPort p {
     text-align: center;
@@ -553,7 +629,9 @@ body {
 #subtituloPort {
   text-align: center;
   margin-bottom: 3vh;
+  margin-top: 3vh;
 }
+
 @media (min-width: 768px) {
   #subtituloPort {
     text-align: center;
@@ -585,11 +663,23 @@ body {
   height: 78vh;
 }
 
+#DGcuatro {
+  background-image: url(./IMAGENES/portfolio/graphic/diseno4.jpg);
+  background-size: cover;
+  height: 78vh;
+}
+
+#DGcinco {
+  background-image: url(./IMAGENES/portfolio/graphic/diseno5.jpg);
+  background-size: cover;
+  height: 78vh;
+}
+
 #PWuno {
   background-image: url(./IMAGENES/portfolio/webs/PWUNO.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 78vh;
+  height: 65vh;
   margin-bottom: 3vh;
 }
 
@@ -597,13 +687,28 @@ body {
   background-image: url(./IMAGENES/portfolio/webs/PWDOS.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 78vh;
+  height: 65vh;
 }
 
 #PWtres {
-  background-image: url(./IMAGENES/portfolio/webs/img2.jpg);
-  background-size: cover;
-  height: 78vh;
+  background-image: url(./IMAGENES/portfolio/webs/PWTRES.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 65vh;
+}
+
+#PWcuatro {
+  background-image: url(./IMAGENES/portfolio/webs/PWCUATRO.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 65vh;
+}
+
+#PWcinco {
+  background-image: url(./IMAGENES/portfolio/webs/PWCINCO.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 65vh;
 }
 
 #footerPort {
@@ -613,25 +718,29 @@ body {
   height: 6vh;
   text-align: center;
   color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.575)), to(rgba(128, 128, 128, 0.514)));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.575), rgba(128, 128, 128, 0.514));
   font-size: 1rem;
 }
+
 #footerPort p {
   padding-top: 1vh;
 }
 
-@media (min-aspect-ratio: 16/9) {
+@media (min-aspect-ratio: 16 / 9) {
   #fondohome {
     width: 100%;
     height: auto;
   }
 }
-@media (max-aspect-ratio: 16/9) {
+
+@media (max-aspect-ratio: 16 / 9) {
   #fondohome {
     width: auto;
     height: 100%;
   }
 }
+
 #fondohome {
   position: fixed;
   left: 0;
@@ -644,14 +753,22 @@ body {
 }
 
 .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .code {
-  font-family: "Tenor Sans", sans-serif;
+  font-family: 'Tenor Sans', sans-serif;
   text-transform: uppercase;
   font-size: 550%;
   letter-spacing: 0.2rem;
@@ -666,6 +783,7 @@ body {
   color: white;
   margin-top: 5vh;
 }
+
 @media (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
   .code {
     font-size: 600%;
@@ -676,6 +794,7 @@ body {
     border-bottom-right-radius: 0;
   }
 }
+
 @media (min-width: 768px) {
   .code {
     font-size: 11rem;
@@ -683,6 +802,7 @@ body {
     padding-right: 5vw;
   }
 }
+
 @media (min-width: 1024px) {
   .code {
     position: fixed;
@@ -694,6 +814,7 @@ body {
     margin-top: 2rem;
   }
 }
+
 @media (min-width: 480px) and (max-width: 864px) and (orientation: landscape) {
   .code {
     font-size: 600%;
@@ -705,6 +826,7 @@ body {
     border-bottom-right-radius: 0;
   }
 }
+
 @media (min-width: 2300px) {
   .code {
     font-size: 20rem;
@@ -712,7 +834,7 @@ body {
 }
 
 .creators {
-  font-family: "Amiri", serif;
+  font-family: 'Amiri', serif;
   text-align: center;
   font-size: 150%;
   background-color: rgba(14, 13, 13, 0.568);
@@ -723,6 +845,7 @@ body {
   width: fit-content;
   color: white;
 }
+
 @media (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
   .creators {
     font-size: 200%;
@@ -731,6 +854,7 @@ body {
     right: 1rem;
   }
 }
+
 @media (min-width: 768px) {
   .creators {
     font-size: 3rem;
@@ -738,6 +862,7 @@ body {
     padding-right: 3vw;
   }
 }
+
 @media (min-width: 1024px) {
   .creators {
     position: fixed;
@@ -748,6 +873,7 @@ body {
     padding: 0 1rem 0 1rem;
   }
 }
+
 @media (min-width: 480px) and (max-width: 864px) and (orientation: landscape) {
   .creators {
     font-size: 200%;
@@ -756,6 +882,7 @@ body {
     right: 1rem;
   }
 }
+
 @media (min-width: 2300px) {
   .creators {
     font-size: 5rem;
@@ -765,7 +892,7 @@ body {
 }
 
 .campo {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 170%;
   text-align: center;
   letter-spacing: 0.5rem;
@@ -778,12 +905,14 @@ body {
   margin-top: 10vh;
   margin-bottom: 1vh;
 }
+
 @media (min-width: 480px) {
   .campo {
     width: 25rem;
     font-size: 240%;
   }
 }
+
 @media (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
   .campo {
     position: fixed;
@@ -795,6 +924,7 @@ body {
     margin-top: 3vh;
   }
 }
+
 @media (min-width: 768px) {
   .campo {
     font-size: 3.5rem;
@@ -804,6 +934,7 @@ body {
     right: 25vw;
   }
 }
+
 @media (min-width: 1024px) {
   .campo {
     width: 50vw;
@@ -813,6 +944,7 @@ body {
     font-size: 3rem;
   }
 }
+
 @media (min-width: 480px) and (max-width: 864px) and (orientation: landscape) {
   .campo {
     position: fixed;
@@ -822,6 +954,7 @@ body {
     font-size: 8vh;
   }
 }
+
 @media (min-width: 2300px) {
   .campo {
     font-size: 8rem;
@@ -837,21 +970,25 @@ nav {
   top: 60vh;
   width: 100vw;
 }
+
 @media (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
   nav {
     top: 10vh;
   }
 }
+
 @media (min-width: 768px) {
   nav {
     top: 85vh;
   }
 }
+
 @media (min-width: 1024px) {
   nav {
     top: 80vh;
   }
 }
+
 @media (min-width: 480px) and (max-width: 864px) and (orientation: landscape) {
   nav {
     top: 15vh;
@@ -870,6 +1007,7 @@ nav {
   padding: 0 2vw 0 2vw;
   border-radius: 0.5rem;
 }
+
 .fondoNav a {
   font-size: 3.2vh;
   color: white;
@@ -879,6 +1017,7 @@ nav {
   text-align: center;
   margin: 0;
 }
+
 @media (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
   .fondoNav {
     width: 20vw;
@@ -886,6 +1025,7 @@ nav {
     border-radius: 0.5rem;
   }
 }
+
 @media (min-width: 768px) {
   .fondoNav {
     border-radius: 1rem;
@@ -899,21 +1039,34 @@ nav {
   list-style: none;
   text-align: center;
 }
+
 @media (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
   .lista1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0 5vw 0 3vw;
   }
   .lista1 li a {
     font-size: 1.3rem;
   }
 }
+
 @media (min-width: 768px) {
   .lista1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding: 0;
   }
   .lista1 li {
@@ -926,10 +1079,16 @@ nav {
     font-size: 1.7rem;
   }
 }
+
 @media (min-width: 1024px) {
   .lista1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .lista1 li {
     margin-top: 6vh;
@@ -937,10 +1096,16 @@ nav {
     border-radius: 0.5rem;
   }
 }
+
 @media (min-width: 480px) and (max-width: 864px) and (orientation: landscape) {
   .lista1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 20vw;
     padding: 0 5vw 0 10vw;
   }
@@ -952,6 +1117,7 @@ nav {
     font-size: 1.3rem;
   }
 }
+
 @media (min-width: 2300px) {
   .lista1 li a {
     font-size: 4rem;
@@ -965,13 +1131,16 @@ nav {
   height: 6vh;
   text-align: center;
   color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.575)), to(rgba(128, 128, 128, 0.514)));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.575), rgba(128, 128, 128, 0.514));
   font-size: 2.5vh;
 }
+
 #fhome p {
   margin-top: 1vh;
   margin-bottom: 1vh;
 }
+
 @media (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
   #fhome p {
     font-size: 1rem;
@@ -980,6 +1149,7 @@ nav {
     height: 8vh;
   }
 }
+
 @media (min-width: 480px) and (max-width: 864px) and (orientation: landscape) {
   #fhome p {
     font-size: 1.2rem;
@@ -1020,6 +1190,7 @@ nav {
 form {
   margin-left: 5vw;
 }
+
 form label {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -1039,14 +1210,16 @@ input {
 .checkbox {
   min-width: 5vw;
   margin-top: 2vh;
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   padding: 10px;
 }
 
 .checkboxTwo {
   min-width: 5vw;
   margin: 2vh 0 5vh 0;
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   padding: 10px;
 }
 
@@ -1065,6 +1238,7 @@ input {
 #botones {
   padding-bottom: 3rem;
 }
+
 #botones input {
   margin-bottom: 1vh;
 }
@@ -1080,4 +1254,5 @@ input {
   padding-bottom: 1.5vh;
   border: none;
   font-weight: bold;
-}/*# sourceMappingURL=styles.css.map */
+}
+/*# sourceMappingURL=styles.css.map */
