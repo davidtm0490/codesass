@@ -645,34 +645,73 @@ body {
 
 #DGuno {
   background-image: url(./IMAGENES/portfolio/graphic/diseno1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   height: 78vh;
   margin-bottom: 3vh;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 481px) {
+  #DGuno {
+    background-image: url(./IMAGENES/portfolio/graphic/disenot1.jpg);
+  }
 }
 
 #DGdos {
   background-image: url(./IMAGENES/portfolio/graphic/diseno2.jpg);
-  background-size: cover;
+  background-size: contain;
   height: 78vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 481px) {
+  #DGdos {
+    background-image: url(./IMAGENES/portfolio/graphic/disenot2.jpg);
+  }
 }
 
 #DGtres {
   background-image: url(./IMAGENES/portfolio/graphic/diseno3.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   height: 78vh;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 481px) {
+  #DGtres {
+    background-image: url(./IMAGENES/portfolio/graphic/disenot3.jpg);
+  }
 }
 
 #DGcuatro {
   background-image: url(./IMAGENES/portfolio/graphic/diseno4.jpg);
-  background-size: cover;
+  background-size: contain;
   height: 78vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 481px) {
+  #DGcuatro {
+    background-image: url(./IMAGENES/portfolio/graphic/disenot4.jpg);
+  }
 }
 
 #DGcinco {
   background-image: url(./IMAGENES/portfolio/graphic/diseno5.jpg);
-  background-size: cover;
+  background-size: contain;
   height: 78vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 481px) {
+  #DGcinco {
+    background-image: url(./IMAGENES/portfolio/graphic/disenot5.jpg);
+  }
 }
 
 #PWuno {
@@ -681,6 +720,14 @@ body {
   background-repeat: no-repeat;
   height: 65vh;
   margin-bottom: 3vh;
+  background-position: center;
+  margin-bottom: 5vh;
+}
+
+@media (min-width: 481px) {
+  #PWuno {
+    background-image: url(./IMAGENES/portfolio/webs/Webt1.jpg);
+  }
 }
 
 #PWdos {
@@ -688,6 +735,14 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   height: 65vh;
+  background-position: center;
+  margin-bottom: 5vh;
+}
+
+@media (min-width: 481px) {
+  #PWdos {
+    background-image: url(./IMAGENES/portfolio/webs/Webt2.jpg);
+  }
 }
 
 #PWtres {
@@ -695,6 +750,14 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   height: 65vh;
+  background-position: center;
+  margin-bottom: 5vh;
+}
+
+@media (min-width: 481px) {
+  #PWtres {
+    background-image: url(./IMAGENES/portfolio/webs/Webt3.jpg);
+  }
 }
 
 #PWcuatro {
@@ -702,6 +765,14 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   height: 65vh;
+  background-position: center;
+  margin-bottom: 5vh;
+}
+
+@media (min-width: 481px) {
+  #PWcuatro {
+    background-image: url(./IMAGENES/portfolio/webs/Webt4.png);
+  }
 }
 
 #PWcinco {
@@ -709,6 +780,14 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   height: 65vh;
+  background-position: center;
+  margin-bottom: 5vh;
+}
+
+@media (min-width: 481px) {
+  #PWcinco {
+    background-image: url(./IMAGENES/portfolio/webs/Webt5.jpg);
+  }
 }
 
 #footerPort {
@@ -724,6 +803,120 @@ body {
 }
 
 #footerPort p {
+  padding-top: 1vh;
+}
+
+#bodyContacto {
+  background-color: #01011b;
+  color: white;
+  font-weight: bold;
+  background-image: radial-gradient(black, gray, rgba(0, 0, 0, 0.308));
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacTitle {
+  text-align: left;
+  margin: 2vh 0 0 5vw;
+  font-size: 3rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.486);
+  border-radius: 0.5rem;
+}
+
+.contST {
+  margin: 1vh 0 4vh 5vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.486);
+  border-radius: 0.5rem;
+}
+
+form {
+  margin-left: 5vw;
+}
+
+form label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.486);
+  border-radius: 0.2rem;
+  padding: 0 1rem 0 0.2rem;
+}
+
+input {
+  min-width: 90vw;
+  padding-top: 1vh;
+  margin-top: 0.5vh;
+  font-weight: bold;
+}
+
+.checkbox {
+  min-width: 5vw;
+  margin-top: 2vh;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  padding: 10px;
+}
+
+.checkboxTwo {
+  min-width: 5vw;
+  margin: 2vh 0 5vh 0;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  padding: 10px;
+}
+
+.consulta {
+  margin-top: 0vh;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: bold;
+}
+
+#mensaje {
+  min-width: 90vw;
+}
+
+#botones {
+  padding-bottom: 3rem;
+}
+
+#botones input {
+  margin-bottom: 1vh;
+}
+
+.reset {
+  background-color: #6b625c;
+  padding-bottom: 1vh;
+  border: none;
+}
+
+.submit {
+  background-color: #a8fca8;
+  padding-bottom: 1.5vh;
+  border: none;
+  font-weight: bold;
+}
+
+#footerCont {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 6vh;
+  text-align: center;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.575)), to(rgba(128, 128, 128, 0.514)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.575), rgba(128, 128, 128, 0.514));
+  font-size: 1rem;
+}
+
+#footerCont p {
   padding-top: 1vh;
 }
 
@@ -1156,103 +1349,5 @@ nav {
     margin-top: 0.5vh;
     margin-bottom: 1vh;
   }
-}
-
-#bodyContacto {
-  background-color: #01011b;
-  color: white;
-  font-weight: bold;
-  background-image: url(./IMAGENES/contacto.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.contacTitle {
-  text-align: left;
-  margin: 2vh 0 0 5vw;
-  font-size: 3rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: rgba(0, 0, 0, 0.486);
-  border-radius: 0.5rem;
-}
-
-.contST {
-  margin: 1vh 0 4vh 5vw;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: rgba(0, 0, 0, 0.486);
-  border-radius: 0.5rem;
-}
-
-form {
-  margin-left: 5vw;
-}
-
-form label {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: rgba(0, 0, 0, 0.486);
-  border-radius: 0.2rem;
-  padding: 0 1rem 0 0.2rem;
-}
-
-input {
-  min-width: 90vw;
-  padding-top: 1vh;
-  margin-top: 0.5vh;
-  font-weight: bold;
-}
-
-.checkbox {
-  min-width: 5vw;
-  margin-top: 2vh;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  padding: 10px;
-}
-
-.checkboxTwo {
-  min-width: 5vw;
-  margin: 2vh 0 5vh 0;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  padding: 10px;
-}
-
-.consulta {
-  margin-top: 0vh;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-weight: bold;
-}
-
-#mensaje {
-  min-width: 90vw;
-}
-
-#botones {
-  padding-bottom: 3rem;
-}
-
-#botones input {
-  margin-bottom: 1vh;
-}
-
-.reset {
-  background-color: #6b625c;
-  padding-bottom: 1vh;
-  border: none;
-}
-
-.submit {
-  background-color: #a8fca8;
-  padding-bottom: 1.5vh;
-  border: none;
-  font-weight: bold;
 }
 /*# sourceMappingURL=styles.css.map */

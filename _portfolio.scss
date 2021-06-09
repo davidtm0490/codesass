@@ -79,39 +79,69 @@ $monitorxl:"min-width: 2300px";
 #DGuno
 {
     background-image: url(./IMAGENES/portfolio/graphic/diseno1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
     height:78vh;
     margin-bottom: 3vh;
+    background-repeat: no-repeat;
+    @media($tablet)
+    {
+        background-image: url(./IMAGENES/portfolio/graphic/disenot1.jpg); 
+    }
+    
    
 }
 
 #DGdos
 {
     background-image: url(./IMAGENES/portfolio/graphic/diseno2.jpg);
-    background-size: cover;
+    background-size:contain;
     height:78vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media($tablet)
+    {
+        background-image: url(./IMAGENES/portfolio/graphic/disenot2.jpg); 
+    }
 }
 
 #DGtres
 {
     background-image: url(./IMAGENES/portfolio/graphic/diseno3.jpg);
-    background-size: cover;
+    background-size:contain;
+    background-position: center;
     height:78vh;
+    background-repeat: no-repeat;
+    @media($tablet)
+    {
+        background-image: url(./IMAGENES/portfolio/graphic/disenot3.jpg); 
+    }
 }
 
 #DGcuatro
 {
     background-image: url(./IMAGENES/portfolio/graphic/diseno4.jpg);
-    background-size: cover;
+    background-size:contain;
     height:78vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media($tablet)
+    {
+        background-image: url(./IMAGENES/portfolio/graphic/disenot4.jpg); 
+    }
 }
 
 #DGcinco
 {
     background-image: url(./IMAGENES/portfolio/graphic/diseno5.jpg);
-    background-size: cover;
+    background-size:contain;
     height:78vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media($tablet)
+    {
+        background-image: url(./IMAGENES/portfolio/graphic/disenot5.jpg); 
+    }
 }
 
 #PWuno
@@ -121,39 +151,69 @@ $monitorxl:"min-width: 2300px";
     background-repeat: no-repeat;
     height:65vh;
     margin-bottom: 3vh;
+    background-position: center;
+    margin-bottom: 5vh;
+    @media($tablet)
+    {
+        background-image: url(./IMAGENES/portfolio/webs/Webt1.jpg); 
+    }
    
 }
 
 #PWdos
 {
     background-image: url(./IMAGENES/portfolio/webs/PWDOS.png);
-    background-size: contain;
+    background-size:contain;
     background-repeat: no-repeat;
     height:65vh;
+    background-position: center;
+    margin-bottom: 5vh;
+    @media($tablet)
+    {
+        background-image: url(./IMAGENES/portfolio/webs/Webt2.jpg); 
+    }
 }
 
 #PWtres
 {
     background-image: url(./IMAGENES/portfolio/webs/PWTRES.png);
-    background-size: contain;
+    background-size:contain;
     background-repeat: no-repeat;
     height:65vh;
+    background-position: center;
+    margin-bottom: 5vh;
+    @media($tablet)
+    {
+        background-image: url(./IMAGENES/portfolio/webs/Webt3.jpg); 
+    }
 }
 
 #PWcuatro
 {
     background-image: url(./IMAGENES/portfolio/webs/PWCUATRO.jpg);
-    background-size: contain;
+    background-size:contain;
     background-repeat: no-repeat;
     height:65vh;
+    background-position: center;
+    margin-bottom: 5vh;
+    @media($tablet)
+    {
+        background-image: url(./IMAGENES/portfolio/webs/Webt4.png); 
+    }
 }
 
 #PWcinco
 {
     background-image: url(./IMAGENES/portfolio/webs/PWCINCO.jpg);
-    background-size: contain;
+    background-size:contain;
     background-repeat: no-repeat;
     height:65vh;
+    background-position: center;
+    margin-bottom: 5vh;
+    @media($tablet)
+    {
+        background-image: url(./IMAGENES/portfolio/webs/Webt5.jpg); 
+    }
 }
 
 #footerPort
