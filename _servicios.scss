@@ -12,6 +12,7 @@ $monitorxl:"min-width: 2300px";
     font-size: 3rem ;
     margin:1vh 0 3vh 3vw;
     line-height: 9vh;
+    color: white;
     @media (min-width: 480px) and (max-width:824px) and (orientation: landscape) //modo landscape celulares
         {
         font-size: 4rem;
@@ -67,6 +68,7 @@ $monitorxl:"min-width: 2300px";
         text-align: left;
         font-size: 200%;
         padding-left: 2.5vw;
+        color: white;
         @media($tablet)
         {
             font-size: 3rem;
@@ -86,6 +88,7 @@ $monitorxl:"min-width: 2300px";
         font-size: 0.8rem;
         text-align: left;
         list-style: none;
+        color: white;
         @media($tablet)
         {
             font-size: 1.2rem;;
@@ -138,6 +141,7 @@ $monitorxl:"min-width: 2300px";
         padding-right: 1vw;
         margin-top: 1.5vh;
         line-height: 2rem;
+        color: white;
         @media($tablet)
         {
             font-size: 1.2rem;
@@ -157,6 +161,7 @@ $monitorxl:"min-width: 2300px";
         text-align: left;
         font-size: 200%;
         padding-left: 2.5vw;
+        color: white;
         @media($tablet)
         {
             font-size: 3rem;
@@ -203,6 +208,7 @@ $monitorxl:"min-width: 2300px";
         padding-left: 3vw;
         padding-right: 1vw;
         margin-top:1.5vh;
+        color: white;
         @media($tablet)
         {
             font-size: 1.2rem;
@@ -222,6 +228,7 @@ $monitorxl:"min-width: 2300px";
         text-align: left;
         font-size: 200%;
         padding-left: 2.5vw;
+        color: white;
         @media($tablet)
         {
             font-size: 3rem;  
